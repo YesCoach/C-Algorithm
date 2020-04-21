@@ -1,0 +1,7 @@
+//lcm 최소공배수 구하기
+int lcm(int a, int b){
+  int g = gcd(a, b);
+  int l = g * (a/g) * (b/g);        // lcd = a * b / g
+  
+  return l;
+}
