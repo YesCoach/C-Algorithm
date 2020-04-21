@@ -1,0 +1,18 @@
+//최대공약수 구하기 recursion
+//b의 최대공약수 >> a % b = c 일때 b % c 가 0이면 b는 최대공약수.
+int gcd(int a, int b){
+    if (b==0)
+      retrun a;
+    else
+      return gcd(b, a%b);
+}
+
+//최대공약수 구하기 uclid
+int gcd(int a, int b){
+    while (b!=0){
+        int r = a%b;
+        a = b;
+        b = r;
+    }
+    return a;
+}

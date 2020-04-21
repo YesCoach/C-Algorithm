@@ -1,8 +1,0 @@
-//최대공약수 구하기 recursion
-a와 b의 최대공약수 >> a % b = c 일때 b % c 가 0이면 b는 최대공약수.
-int gcd(int a, int b){
-    if (b==0)
-      retrun a;
-    else
-      return gcd(b, a%b);
-}
